@@ -16,6 +16,12 @@
 		CB110F5B2AF1C2430017265C /* Halloween_Candy_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB110F5A2AF1C2430017265C /* Halloween_Candy_AppTests.swift */; };
 		CB110F652AF1C2430017265C /* Halloween_Candy_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB110F642AF1C2430017265C /* Halloween_Candy_AppUITests.swift */; };
 		CB110F672AF1C2430017265C /* Halloween_Candy_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB110F662AF1C2430017265C /* Halloween_Candy_AppUITestsLaunchTests.swift */; };
+		CB110F742AF1C4700017265C /* secondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB110F732AF1C4700017265C /* secondViewController.swift */; };
+		CB110F762AF1C47C0017265C /* thirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB110F752AF1C47C0017265C /* thirdViewController.swift */; };
+		CB110F782AF1C48C0017265C /* fourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB110F772AF1C48C0017265C /* fourthViewController.swift */; };
+		CB110F7A2AF1C4950017265C /* fifthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB110F792AF1C4950017265C /* fifthViewController.swift */; };
+		CB110F7C2AF45EAF0017265C /* Property List.plist in Resources */ = {isa = PBXBuildFile; fileRef = CB110F7B2AF45EAF0017265C /* Property List.plist */; };
+		CB110F7E2AF466FC0017265C /* secondTableDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB110F7D2AF466FC0017265C /* secondTableDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,12 @@
 		CB110F602AF1C2430017265C /* Halloween Candy AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Halloween Candy AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB110F642AF1C2430017265C /* Halloween_Candy_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Halloween_Candy_AppUITests.swift; sourceTree = "<group>"; };
 		CB110F662AF1C2430017265C /* Halloween_Candy_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Halloween_Candy_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CB110F732AF1C4700017265C /* secondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secondViewController.swift; sourceTree = "<group>"; };
+		CB110F752AF1C47C0017265C /* thirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = thirdViewController.swift; sourceTree = "<group>"; };
+		CB110F772AF1C48C0017265C /* fourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fourthViewController.swift; sourceTree = "<group>"; };
+		CB110F792AF1C4950017265C /* fifthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fifthViewController.swift; sourceTree = "<group>"; };
+		CB110F7B2AF45EAF0017265C /* Property List.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Property List.plist"; sourceTree = "<group>"; };
+		CB110F7D2AF466FC0017265C /* secondTableDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secondTableDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +115,12 @@
 				CB110F452AF1C2420017265C /* SceneDelegate.swift */,
 				CB110F472AF1C2420017265C /* ViewController.swift */,
 				CB110F492AF1C2420017265C /* Main.storyboard */,
+				CB110F7D2AF466FC0017265C /* secondTableDetailViewController.swift */,
+				CB110F732AF1C4700017265C /* secondViewController.swift */,
+				CB110F7B2AF45EAF0017265C /* Property List.plist */,
+				CB110F752AF1C47C0017265C /* thirdViewController.swift */,
+				CB110F772AF1C48C0017265C /* fourthViewController.swift */,
+				CB110F792AF1C4950017265C /* fifthViewController.swift */,
 				CB110F4C2AF1C2430017265C /* Assets.xcassets */,
 				CB110F4E2AF1C2430017265C /* LaunchScreen.storyboard */,
 				CB110F512AF1C2430017265C /* Info.plist */,
@@ -233,6 +251,7 @@
 			files = (
 				CB110F502AF1C2430017265C /* LaunchScreen.storyboard in Resources */,
 				CB110F4D2AF1C2430017265C /* Assets.xcassets in Resources */,
+				CB110F7C2AF45EAF0017265C /* Property List.plist in Resources */,
 				CB110F4B2AF1C2420017265C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,9 +277,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB110F742AF1C4700017265C /* secondViewController.swift in Sources */,
 				CB110F482AF1C2420017265C /* ViewController.swift in Sources */,
+				CB110F782AF1C48C0017265C /* fourthViewController.swift in Sources */,
+				CB110F762AF1C47C0017265C /* thirdViewController.swift in Sources */,
 				CB110F442AF1C2420017265C /* AppDelegate.swift in Sources */,
 				CB110F462AF1C2420017265C /* SceneDelegate.swift in Sources */,
+				CB110F7E2AF466FC0017265C /* secondTableDetailViewController.swift in Sources */,
+				CB110F7A2AF1C4950017265C /* fifthViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
