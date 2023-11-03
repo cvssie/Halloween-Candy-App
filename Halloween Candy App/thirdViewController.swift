@@ -7,8 +7,26 @@
 
 import UIKit
 
-class thirdViewController: UIViewController {
+class thirdViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+   var hardCandy = ["Jolly Rancher", "Lifesavers", "Lollipop", "Sweet Tarts"]
+    
+    var hardCandyRating = ["5 Stars", "4 Stars", "4 Stars", "3 Stars"]
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return hardCandy.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+       
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+                      let text = hardCandy[indexPath.row]
+                      cell.textLabel?.text = text
+                      return cell
 
+    }
+    
+    @IBOutlet weak var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
