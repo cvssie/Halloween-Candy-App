@@ -29,7 +29,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="1gA-Ze-t53" kind="show" id="gpj-Wf-44L"/>
+                                            <segue destination="1gA-Ze-t53" kind="show" identifier="mySegue" id="gpj-Wf-44L"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -82,7 +82,7 @@
                                     <action selector="learnMore:" destination="LGi-7S-9jF" eventType="touchUpInside" id="w3U-I2-eIv"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="download" translatesAutoresizingMaskIntoConstraints="NO" id="kRd-Jo-ZAD">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="crunch" translatesAutoresizingMaskIntoConstraints="NO" id="kRd-Jo-ZAD">
                                 <rect key="frame" x="24" y="305" width="344" height="243"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -132,20 +132,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vbt-9L-ph3">
-                                <rect key="frame" x="76" y="284" width="240" height="128"/>
+                                <rect key="frame" x="64" y="213" width="264" height="196"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="HL4-Q8-jI4">
                                 <rect key="frame" x="30" y="469" width="333" height="187"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oEx-Sy-tiK">
-                                <rect key="frame" x="160" y="160" width="156" height="21"/>
+                                <rect key="frame" x="118" y="160" width="156" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
@@ -157,13 +157,14 @@
                     </view>
                     <navigationItem key="navigationItem" id="3P0-MH-ETV"/>
                     <connections>
-                        <outlet property="crunchCandy" destination="HL4-Q8-jI4" id="xaZ-8t-5nu"/>
+                        <outlet property="imageView" destination="Vbt-9L-ph3" id="yjN-oG-jel"/>
                         <outlet property="label" destination="oEx-Sy-tiK" id="2o5-QS-hIh"/>
+                        <outlet property="peanutm" destination="HL4-Q8-jI4" id="1fe-rz-PaL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R4b-Jp-12g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1451" y="1372"/>
+            <point key="canvasLocation" x="-1451.1450381679388" y="1371.8309859154931"/>
         </scene>
         <!--Hard Candy-->
         <scene sceneID="y5J-8h-zXq">
@@ -220,7 +221,7 @@
     <resources>
         <image name="background" width="470" height="608"/>
         <image name="bolt.heart" catalog="system" width="128" height="107"/>
-        <image name="download" width="225" height="225"/>
+        <image name="crunch" width="225" height="225"/>
         <image name="heart.circle" catalog="system" width="128" height="123"/>
         <image name="heart.rectangle.fill" catalog="system" width="128" height="93"/>
         <image name="house" catalog="system" width="128" height="104"/>

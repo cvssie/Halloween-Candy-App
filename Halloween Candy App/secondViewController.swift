@@ -15,10 +15,16 @@ class secondViewController: UIViewController, UITableViewDataSource, UITableView
     var chocolateRating = ["5 Stars", "4 Stars", "5 Stars", "4 Stars"]
     
     @IBOutlet weak var tableView: UITableView!
+    
+   var categoryOneImageData = [String]()
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
+        //pt 8
+        let path = Bundle.main.path(forResource: "Property List", ofType: "plist")
+        let dict = NSDictionary(contentsOfFile: path!)
+         categoryOneImageData = dict!.object(forKey:"CategoryOneImages") as! [String]
     }
     
     
@@ -49,13 +55,20 @@ class secondViewController: UIViewController, UITableViewDataSource, UITableView
         return chocolates.count
     }
 
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-                if segue.identifier == "mySegue"
-                {
-                    let s1 = segue.destination as! secondTableDetailViewController
-                    let imageIndex = tableView.indexPathForSelectedRow?.row
-                   
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
+    {
+        if segue.identifier == "mySegue"
+        {
+            let s1 = segue.destination as! secondTableDetailViewController
+            let imageIndex = tableView.indexPathForSelectedRow?.row
+            s1.imagePass = categoryOneImageData[imageIndex!]
+        }
+    }
+                    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
+                    {
+                        tableView.deselectRow(at: indexPath, animated: true)
                 }
-            }
+        
+            
 }
 
