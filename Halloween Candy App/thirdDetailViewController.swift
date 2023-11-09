@@ -1,31 +1,31 @@
 //
-//  secondTableDetailViewController.swift
+//  thirdDetailViewController.swift
 //  Halloween Candy App
 //
-//  Created by Cassie Kauhane on 11/2/23.
+//  Created by Cassie Kauhane on 11/9/23.
 //
 
 import UIKit
 
-class secondTableDetailViewController: UIViewController {
+class thirdDetailViewController: UIViewController {
 
+
+    
     @IBOutlet weak var imageView: UIImageView!
+   
 
     var imagePass: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+       
         
-        // Do any additional setup after loading the view.
-       
-       
         if let imageName = imagePass {
-            imageView.image = UIImage(named: imageName)
-        }
+            imageView.image = UIImage(named: imageName)}
+        // Do any additional setup after loading the view.
     }
     
 
-    
     /*
     // MARK: - Navigation
 
@@ -35,5 +35,5 @@ class secondTableDetailViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+ 
 }

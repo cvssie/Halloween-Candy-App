@@ -9,17 +9,15 @@ import UIKit
 
 class secondTableViewController: UIViewController {
 
-    @IBOutlet weak var displayLabel: UILabel!
+
     
     @IBOutlet weak var imageView: UIImageView!
     
-    @IBOutlet weak var textBox: UITextView!
     var imagePass: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        displayLabel.text = "Jolly Ranchers"
-        textBox.text = "I like Jolly Ranchers because the flavors are all good and its very nostalgic to me"
+        
         // Do any additional setup after loading the view.
         if let imageName = imagePass {
             imageView.image = UIImage(named: imageName)}
@@ -35,5 +33,5 @@ class secondTableViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+   
 }

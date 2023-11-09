@@ -23,6 +23,7 @@
 		CB110F7C2AF45EAF0017265C /* Property List.plist in Resources */ = {isa = PBXBuildFile; fileRef = CB110F7B2AF45EAF0017265C /* Property List.plist */; };
 		CB110F7E2AF466FC0017265C /* secondTableDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB110F7D2AF466FC0017265C /* secondTableDetailViewController.swift */; };
 		CBB95DE92AFAFADC006AFF77 /* secondTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB95DE82AFAFADB006AFF77 /* secondTableViewController.swift */; };
+		CBC8E9562AFD91DF00EF58CD /* thirdDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC8E9552AFD91DF00EF58CD /* thirdDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		CB110F7B2AF45EAF0017265C /* Property List.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Property List.plist"; sourceTree = "<group>"; };
 		CB110F7D2AF466FC0017265C /* secondTableDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secondTableDetailViewController.swift; sourceTree = "<group>"; };
 		CBB95DE82AFAFADB006AFF77 /* secondTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secondTableViewController.swift; sourceTree = "<group>"; };
+		CBC8E9552AFD91DF00EF58CD /* thirdDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = thirdDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 				CB110F452AF1C2420017265C /* SceneDelegate.swift */,
 				CB110F472AF1C2420017265C /* ViewController.swift */,
 				CB110F492AF1C2420017265C /* Main.storyboard */,
+				CBC8E9552AFD91DF00EF58CD /* thirdDetailViewController.swift */,
 				CBB95DE82AFAFADB006AFF77 /* secondTableViewController.swift */,
 				CB110F7D2AF466FC0017265C /* secondTableDetailViewController.swift */,
 				CB110F732AF1C4700017265C /* secondViewController.swift */,
@@ -283,6 +286,7 @@
 				CB110F742AF1C4700017265C /* secondViewController.swift in Sources */,
 				CB110F482AF1C2420017265C /* ViewController.swift in Sources */,
 				CB110F782AF1C48C0017265C /* fourthViewController.swift in Sources */,
+				CBC8E9562AFD91DF00EF58CD /* thirdDetailViewController.swift in Sources */,
 				CB110F762AF1C47C0017265C /* thirdViewController.swift in Sources */,
 				CB110F442AF1C2420017265C /* AppDelegate.swift in Sources */,
 				CB110F462AF1C2420017265C /* SceneDelegate.swift in Sources */,
