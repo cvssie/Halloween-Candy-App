@@ -20,11 +20,15 @@ class thirdViewController: UIViewController, UITableViewDataSource, UITableViewD
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         let text = hardCandy[indexPath.row]
-        cell.textLabel?.text = text
-        return cell
+        cell.detailTextLabel?.text = hardCandyRating[indexPath.row]
+              cell.textLabel?.text = text
+              return cell
         
     }
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
+    {
+        tableView.deselectRow(at: indexPath, animated: true)
+}
     @IBOutlet weak var tableView: UITableView!
     var CategoryTwoImages = [String]()
     override func viewDidLoad() {
@@ -54,6 +58,6 @@ class thirdViewController: UIViewController, UITableViewDataSource, UITableViewD
          // Pass the selected object to the new view controller.
          }
          */
-        
+       
     }
 }

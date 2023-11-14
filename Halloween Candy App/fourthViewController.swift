@@ -19,11 +19,15 @@ class fourthViewController: UIViewController, UITableViewDataSource, UITableView
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         let text = sourCandy[indexPath.row]
-        cell.textLabel?.text = text
-        return cell
+        cell.detailTextLabel?.text = sourRating[indexPath.row]
+              cell.textLabel?.text = text
+              return cell
         
     }
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
+    {
+        tableView.deselectRow(at: indexPath, animated: true)
+}
     
     @IBOutlet weak var tableView: UITableView!
     var CategoryThreeImages = [String]()
