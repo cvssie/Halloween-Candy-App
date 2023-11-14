@@ -45,7 +45,7 @@ class thirdViewController: UIViewController, UITableViewDataSource, UITableViewD
     {
         if segue.identifier == "mySegue"
         {
-            let s1 = segue.destination as! secondTableDetailViewController
+            let s1 = segue.destination as! secondTableViewController
             let imageIndex = tableView.indexPathForSelectedRow?.row
             s1.imagePass = CategoryTwoImages[imageIndex!]
         }

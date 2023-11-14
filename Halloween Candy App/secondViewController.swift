@@ -64,9 +64,9 @@ class secondViewController: UIViewController, UITableViewDataSource, UITableView
             s1.imagePass = categoryOneImageData[imageIndex!]
         }
     }
-                    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
+        func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
                     {
-                        tableView.deselectRow(at: indexPath, animated: true)
+                    tableView.deselectRow(at: indexPath, animated: true)
                 }
         
             
